@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanessa's Simple Webpage</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>A Simple Webpage</h1>
+      <p>A comprehensive demonstration of HTML elements</p>
+    </header>
+
+    <!-- Ordered List Section with Roman Numerals -->
+    <section id="list">
+      <h2>Ordered List with Roman Numerals</h2>
+      <ol type="I">
+        <li>Introduction to HTML</li>
+        <li>CSS Fundamentals</li>
+        <li>JavaScript Basics</li>
+        <li>Responsive Web Design</li>
+        <li>Web Accessibility</li>
+      </ol>
+    </section>
+
+    <!-- External Image Section -->
+    <section id="image">
+      <h2>A City Skyline</h2>
+      <img
+        src="https://images.pexels.com/photos/13455259/pexels-photo-13455259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="City Skyline Across Body of Water during Night Time"
+      />
+    </section>
+
+    <!-- Contacts Table Section with Ghanaian Data -->
+    <section id="contacts">
+      <h2>Contact Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kwame Nkrumah</td>
+            <td>15 Independence Ave, Accra</td>
+            <td>+233 20 123 4567</td>
+            <td>kwame.n@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Abena Osei</td>
+            <td>24 Cantonments Rd, Accra</td>
+            <td>+233 24 987 6543</td>
+            <td>abena.osei@example.com</td>
+          </tr>
+          <tr>
+            <td>Kofi Mensah</td>
+            <td>7 Asafoatse Rd, Kumasi</td>
+            <td>+233 27 567 8901</td>
+            <td>kofi.m@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Ama Darko</td>
+            <td>18 Beach Rd, Cape Coast</td>
+            <td>+233 55 234 5678</td>
+            <td>ama.darko@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Yaw Amoako</td>
+            <td>32 Hospital Rd, Tamale</td>
+            <td>+233 50 876 5432</td>
+            <td>yaw.amoako@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration">
+      <h2>Registration Form</h2>
+      <form id="registrationForm" action="#" method="post">
+        <!-- Name field -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <!-- Email field -->
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <!-- Password field -->
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+            minlength="8"
+          />
+          <small>Password must be at least 8 characters long</small>
+        </div>
+
+        <!-- Date field -->
+        <div class="form-group">
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+
+        <!-- Dropdown field -->
+        <div class="form-group">
+          <label for="region">Region in Ghana:</label>
+          <select id="region" name="region" required>
+            <option value="">Select your region</option>
+            <option value="greater-accra">Greater Accra</option>
+            <option value="ashanti">Ashanti</option>
+            <option value="western">Western</option>
+            <option value="eastern">Eastern</option>
+            <option value="central">Central</option>
+            <option value="northern">Northern</option>
+            <option value="upper-east">Upper East</option>
+            <option value="upper-west">Upper West</option>
+            <option value="volta">Volta</option>
+            <option value="bono">Bono</option>
+          </select>
+        </div>
+
+        <!-- Radio buttons -->
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+          <label>Interests:</label>
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="technology"
+              name="interests[]"
+              value="technology"
+            />
+            <label for="technology">Technology</label>
+
+            <input
+              type="checkbox"
+              id="culture"
+              name="interests[]"
+              value="culture"
+            />
+            <label for="culture">Ghanaian Culture</label>
+
+            <input
+              type="checkbox"
+              id="music"
+              name="interests[]"
+              value="music"
+            />
+            <label for="music">Highlife Music</label>
+
+            <input type="checkbox" id="food" name="interests[]" value="food" />
+            <label for="food">Ghanaian Cuisine</label>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </body>
+</html>
